@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Викиум</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__wrapper">
+    <a href="#">
+      <img class="header__logo" src="img/header-logo.svg" alt="Викиум тренажеры для мозга" width="99">
+    </a>
+  </div>
+</header>
+<main class="container">
+  <section class="description">
+    <h1 class="description__title">Три дня для твоего мозга.</h1>
+    <p class="description__text">
+      Это стоит символические <span class="description__text-bold">60 рублей</span>, для того, чтобы была мотивация пройти этот путь до конца
+    </p>
+  </section>
+  <section class="pay">
+    <div class="pay__wrapper">
+
+      <form action="post" class="pay__form">
+        <div class="pay__form-wrapper">
+          <div class="pay__form-list pay__form-upper">
+            <div class="pay__form-icons">
+              <svg class="pay__form-icon pay__form-icon--mastercard" width="42" height="" viewBox="0 0 640 390">
+                <use xlink:href="img/mastercard_logo.svg#mastercard"></use>
+              </svg>
+              <svg class="pay__form-icon pay__form-icon--maestro" width="42" height="" viewBox="0.205 0.428 125.59 75.144">
+                <use xlink:href="img/maestro_logo.svg#maestro"></use>
+              </svg>
+              <svg class="pay__form-icon pay__form-icon--visa" width="42" height="" viewBox="0 0 640 195">
+                <use xlink:href="img/visa.svg#visa"></use>
+              </svg>
+            </div>
+            <div class="pay__form-upper-field">
+              <label for="number" class="pay__form-label">Номер карты</label>
+              <input type="text" class="pay__form-input" id="number" placeholder="XXXX XXXX XXXX XXXX">
+            </div>
+            <div class="pay__form-upper-wrapper">
+              <div class="pay__form-upper-field">
+                <label for="name" class="pay__form-label">Имя владельца</label>
+                <input type="text" class="pay__form-input" id="name" placeholder="Константиновский">
+              </div>
+              <div class="pay__form-upper-field">
+                <label for="date" class="pay__form-label">Срок действия</label>
+                <input type="text" class="pay__form-input" id="date" placeholder="08 / 08">
+              </div>
+            </div>
+          </div>
+          <div class="pay__form-lower">
+            <div class="pay__form-lower-field">
+              <label for="cvc" class="pay__form-label">CVC</label>
+              <input type="text" class="pay__form-input" id="cvc" placeholder="234">
+            </div>
+            <p class="pay__form-text">Три цифры с оборотной стороны</p>
+          </div>
+        </div>
+        <div class="pay__form-privily-wrapper">
+          <img class="pay__form-privily-lock" width="20" src="img/lock-grey.svg" alt="">
+          <p class="pay__form-privily-text">Мы не храним ваши данные, а сразу передаем их по зашифрованному каналу платежной системе</p>
+          <button class="pay__form-btn"><img class="pay__form-btn-lock" src="img/lock-white.svg" alt="">ОПЛАТИТЬ 60 ₽</button>
+        </div>
+      </form>
+      <div class="pay__methods">
+          <button class="pay__methods-btn">Все способы оплаты</button>
+        <ul class="pay__methods-list ">
+          <li class="pay__methods-item">
+            <svg width="50" height="50" viewBox="0 0 192 192">
+              <use xlink:href="img/webmoney.svg#webmoney"></use>
+            </svg>
+            <p class="pay__method-text">WebMoney</p></li>
+          <li class="pay__methods-item">
+            <svg width="50" height="50" viewBox="0 0 200 200">
+              <use xlink:href="img/qiwi.svg#qiwi"></use>
+            </svg>
+            <p class="pay__method-text">QIWI Wallet</p></li>
+          <li class="pay__methods-item">
+            <svg width="50" height="50" viewBox="0 0 48 48">
+              <use xlink:href="img/paypal.svg#paypal"></use>
+            </svg>
+            <p class="pay__method-text">PayPal</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
